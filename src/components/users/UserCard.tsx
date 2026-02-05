@@ -25,26 +25,12 @@
            </Avatar>
            
            <div className="flex-1 min-w-0">
+            <div className='flex justify-between'>
              <h3 className="font-semibold text-lg text-foreground truncate">
                {fullName}
              </h3>
-             
-             <div className="mt-2 space-y-1.5">
-               <div className="flex items-center gap-2 text-sm text-muted-foreground">
-                 <Mail className="h-4 w-4 shrink-0" />
-                 <span className="truncate">{user.email}</span>
-               </div>
-               
-               <div className="flex items-center gap-2 text-sm text-muted-foreground">
-                 <Phone className="h-4 w-4 shrink-0" />
-                 <span className="truncate">{user.phone}</span>
-               </div>
-             </div>
-           </div>
-         </div>
-         
-         <div className="absolute top-4 right-4 flex gap-1 opacity-0 group-hover:opacity-100 transition-opacity">
-           <Button
+             <div>
+             <Button
              variant="ghost"
              size="icon"
              onClick={() => onEdit(user)}
@@ -63,7 +49,26 @@
              <Trash2 className="h-4 w-4" />
              <span className="sr-only">Delete user</span>
            </Button>
+           </div>
+            </div>
+             
+             <div className="mt-2 space-y-1.5">
+               <div className="flex items-center gap-2 text-sm text-muted-foreground">
+                 <Mail className="h-4 w-4 shrink-0" />
+                 <span className="truncate">{user.email}</span>
+               </div>
+               
+               <div className="flex items-center gap-2 text-sm text-muted-foreground">
+                 <Phone className="h-4 w-4 shrink-0" />
+                 <span className="truncate">{user.phone}</span>
+               </div>
+             </div>
+           </div>
          </div>
+         
+         {/* <div className="absolute top-4 right-4 flex gap-1 opacity-0 group-hover:opacity-100 transition-opacity"> */}
+           
+         {/* </div> */}
        </CardContent>
      </Card>
    );

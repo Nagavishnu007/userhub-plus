@@ -69,10 +69,6 @@ A modern, extensible React application for managing user data with a schema-driv
 - Success toast: "User deleted successfully!"
 - Card removed with smooth animation
 
----
-
-## 🔧 Extensibility Architecture
-
 ### Schema-Based Form Configuration
 ```
 A central configuration file will define all fields:
